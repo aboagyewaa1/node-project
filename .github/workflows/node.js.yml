@@ -37,7 +37,7 @@ jobs:
        password: ${{ secrets.PWD }}
 
     - name: Build Docker image
-      run: docker build -t node1:latest .
+      run: docker build -t ewuramaamponsah445/node-project:latest .
   
     - name: Push Docker image to Docker Hub
       run: docker push ewuramaamponsah445/node-project:latest
