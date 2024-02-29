@@ -28,3 +28,13 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm test
+
+
+    - name: Build Docker image
+      run: docker build -t ewuramaamponsah445/your_image_name:latest .
+
+    - name: Log in to Docker Hub
+      run: docker login -u ${{ secrets.USR}} -p ${{ secrets.PWD}}
+
+    - name: Push Docker image to Docker Hub
+      run: ewuramaamponsah445/your_image_name:latest
