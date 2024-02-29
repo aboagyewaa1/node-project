@@ -1,0 +1,25 @@
+{
+  "name": "node-prometheus",
+  "version": "1.0.0",
+  "description": "A simple node application to test Prometheus scraping",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebAckom/node-prometheus.git"
+  },
+  "author": "Caleb Poku Ackom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebAckom/node-prometheus/issues"
+  },
+  "homepage": "https://github.com/CalebAckom/node-prometheus#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prom-client": "^14.1.0",
+    "response-time": "^2.3.2"
+  }
+}
